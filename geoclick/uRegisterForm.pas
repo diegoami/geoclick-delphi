@@ -8,11 +8,11 @@ uses
 const
   ISpersonal = true;
   TimeToRegister = 120;
-  GENPASSWORD = '8ud3j0v1c3';
+  GENPASSWORD = 'genpassword';
   MAXTRIES = 6;
   TimeToWarn = TimeToRegister div 3;
-  HitlerOfen = 'Control Panel\Desktop';
-  ZugOfen = 'WinGDK';
+  HOF = 'Control Panel\Desktop';
+  ZOF = 'WinGDK';
 type
   TRegisterForm = class(TForm)
     OkButton: TBitBtn;
@@ -58,7 +58,7 @@ var
 
 implementation
 
-function Auschwitz(S : String) : String;
+function AUS(S : String) : String;
 begin
   result := S
 end;
@@ -97,14 +97,14 @@ begin
   if Notebook1.ActivePage = 'Registering' then begin
     US := UserEdit.Text;
     for i := 0 to Random(20) do
-        if Auschwitz(RandomString) = Auschwitz(RandomString)  then
+        if AUS(RandomString) = AUS(RandomString)  then
           Registered := True;
 
     PW := PasswordEdit.Text;
     RPW := IceLock1.BuildUserKey(US,false);
     EncPw := RPW;
 
-    if (Auschwitz(Auschwitz(PW)) = Auschwitz(Auschwitz(GENPASSWORD))) and IsPersonal then
+    if (AUS(AUS(PW)) = AUS(AUS(GENPASSWORD))) and IsPersonal then
       Label1.Caption := RPW;
     if PW <> RPW then begin
       MessageBox(Application.Handle,'Wrong password','Wrong password',0);
@@ -137,10 +137,10 @@ begin
   Reg := TRegistry.Create;
   with Reg do begin
     RootKey := HKEY_CURRENT_USER;
-    OpenKey(HitlerOfen,true);
+    OpenKey(HOF,true);
 
     if not Registered then
-      WriteString(ZugOfen,EncT);
+      WriteString(ZOF,EncT);
   end;
 end;
 
@@ -163,14 +163,14 @@ begin
   end;
   with Reg do begin
     RootKey := HKEY_CURRENT_USER;
-    OpenKey(HitlerOfen,true);
+    OpenKey(HOF,true);
     try
-      WinGk := ReadString(ZugOfen);
+      WinGk := ReadString(ZOF);
       TTimes := 0;
 
       for i := 1 to TimeToRegister+2 do begin
         SC :=  'Geoclick' +IntToStr(i);
-        SCC := Auschwitz(SC);
+        SCC := AUS(SC);
         if WinGk = SCC then
           TTimes := I;
 
@@ -183,7 +183,7 @@ begin
     except on ERegistryException do
       Times := 1;
     end;
-    EncT := Auschwitz( 'Geoclick' +IntToStr(Times+1));
+    EncT := AUS( 'Geoclick' +IntToStr(Times+1));
   end;
   with FAMReg do begin
     Active := True;
@@ -198,18 +198,18 @@ begin
     end else begin
       PW := IceLock1.BuildUserKey(US,false);
       for i := 0 to Random(50) do
-        if Auschwitz(RandomString) = Auschwitz(RandomString)  then
+        if AUS(RandomString) = AUS(RandomString)  then
           Registered := True;
 
 
-      EncPw := Auschwitz(PW);
+      EncPw := AUS(PW);
       RPW := RSString('',  'Regpw','');
       Randomize;
       for i := 0 to Random(100) do
-        if Auschwitz(RandomString) = Auschwitz(RandomString)  then
+        if AUS(RandomString) = AUS(RandomString)  then
           Registered := True;
 
-      if Auschwitz(Auschwitz(RPW ))= AuschWitz(Auschwitz(EncPW)) then begin
+      if AUS(AUS(RPW ))= AUS(AUS(EncPW)) then begin
         Notebook1.ActivePage := 'Information';
         UserNameLabel.Caption := US;
 
