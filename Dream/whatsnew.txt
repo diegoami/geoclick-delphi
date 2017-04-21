@@ -1,0 +1,172 @@
+What's new in 3.51
+----------------
+ '+' = New feature
+ '-' = Bug fixed
+ '*' = behavior changed
+----------------
+
+[Common]
+
++ TDCColorCombo: CustomColor property added
+
+[Scripter]
+
+- bug when function returns Currency
+
+- AddItem(nil) caused AV
+
++ Delphi Script supports MBCS strings
+
++ function TDCScripter.IsRunning
+
+- memory leaks
+
+[Designer]
+
+- ESC now selects Form  when the current selected control is
+  parented by form.
+
+- Designer.AllowedActions property doesn't work
+
+- TabOrder isn't restored when StoreChanges is used
+
+- Bug  when the changes  are applied to  a form with another
+  name
+
+[Inspector]
+
++ AutoSizeNames property
+
+- bug when ShowHints = True and Inspector is empty
+
+[Memo]
+
++ TSyntaxParserEditor:  now you can use any color  for items
+  (not only standards) and work with files (Load/Save impro-
+  ved, SaveAs added)
+
+- TSyntaxParser:  fixed bug with  inherited font & backcolor
+  of items
+
++ SyntaxSchemes: MIDL and CSS2 schemes added
+
+* SyntaxSchemes: RC and CSS1 schemes improved
+
++ TSyntaxParser: syntaxblocks now are stored in hierarchical
+  structure -> it is possible to create more complex schemes
+
++ TSyntaxParser:  each token in collections now has property
+  UseToken determining whether to use this token or not.
+
+- Bug when Parser.OnGetColorData is assigned
+
+- Bug with TabStops
+
+- Bug with indent/outdent when rtf syntax is used.
+
+
+What's new in 3.5
+----------------
+ '+' = New feature
+ '-' = Bug fixed
+ '*' = behavior changed
+----------------
+
+This version supports Delphi 3, 4 and 5 and C++ Builder 3, 4
+and 5.
+
+[Scripter]
+
+All languages
+-------------
+
++ Records are supported. Now you can call functions that use
+  parameters like TPoint.
+
++ VAR  parameters  are  supported.  This  means  you can use
+  routines like Delete now.
+
+- Bug with parameters of WideString type
+
+- bug with calling cdecl/stdcall/safecall procs with several
+  parameters
+
+- bug with calling procs  with parameters of OleVariant type
+
++ DCScripter.OnGetUnitScripter event
+
+- Bug with function returning Real
+
+Delphi Script:
+--------------
+
++ Delphi Script is now compiler!   Before the script is exe-
+  cuted  it is compiled  to the native CPU code  and thus is
+  executed much faster.
+
++ Now Delphi Script is stack-based so a lot of bugs are gone
+  and recursive calls are possible.
+
++ Case is supported
+
++ Typecasting is supported now.   So you can write smth like
+  TComponent(c).Caption := 'Hello';
+
++ Assigned is supported
+
++ Abs is supported
+
++ Delphi Script : Append, AssignFile, BlockRead, BlockWrite,
+  CloseFile,  Eof, Erase,  FilePos,  FileSize, Flush,  Read,
+  Readln, Rename,  Reset, Rewrite,  Seek, SeekEof, SeekEoln,
+  Truncate, Write, Writeln are supported
+
+- Bug with using precompiled units
+
+- Delphi Script : Error in source like
+    if a = 1 and b = 1
+  caused parser to hang.
+
++ OnExecuteLine event.  It is fired each time the new script
+  opcode  is  executed  so  now  it's  possible to implement
+  breakpoints and step by step execution.
+
+[Inspector]
+
++ Lookup   fields    are   now   correctly   supported    in
+  DatasetInspector
+
+[Memo]
+
++ Dream Memo  supports  different  font attributes.  You can
+  load/save RTF files, and change the font of any text block
+  at runtime using SelAttributes property.  You can consider
+  using Dream Memo instead of RichEdit now.
+
++ ClipboardType  property.  Now  you  can paste/copy text in
+  Rich Text format.
+
++ New customizable parser  is added.  29  predefined  syntax
+  schemes  are provided  and you can  easily  define the new
+  ones.
+
++ Regular expressions support added.
+
++ moColoredLineStyle,  moDisableInvertedSel   options  added
+  (for painting line with background color).
+
++ Memosource options added: soExcludeReadOnlyLines (excludes
+  read   only   lines   from   print  and  save   routines),
+  soCursorAlwaysOnTabs  (caret is not allowed to stay in the
+  middle of tab gap)
+
++ Tab and Space characters can be painted as special symbols
+
++ Clipper code templates added
+
+[Common]
+
++ DCEdit:  DreamBorderStyle,  UseDreamBorder  and  LineColor
+  properties
+
+- DCMenu bugs are fixed

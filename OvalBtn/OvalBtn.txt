@@ -1,0 +1,99 @@
+TOvalButton (C)opyright 1998   Version 1.2
+Autor : Simon Reinhardt
+eMail : S.Reinhardt@WTal.de
+Internet : http://sr-soft.wtal.de
+
+Die Komponente TOvalButton ist eine Weiterentwicklung der Komponente
+TRoundButton von Brendan Rempel, der so nett war, diese als Public Domain
+zu veröffentlichen. Vom Original ist aber (außer der ovalen Form) eigentlich 
+nichts mehr übrig geblieben.
+
+Auch diese Komponente TOvalButton ist Public Domain, das Copyright liegt
+aber beim Autor. Fragen und Verbesserungsvorschläge sind immer willkommen.
+
+
+
+Dateiumfang:
+------------
+
+Readme.txt 		- Diese Datei
+
+Ordner	16Bit		- Dateien für Delphi 1
+	OvalBtn.pas	- Quelltext der Komponente
+	OvaBtn.dcr	- Resourcendatei der Komponente
+	
+Ordner	32Bit		- Dateien für Delphi 2, 3 (und 4 ??)
+	OvalBtn.pas	- Quelltext der Komponente
+	OvaBtn.dcr	- Resourcendatei der Komponente
+
+Ordner	BtnDemo		- TOvalButton-Demo-Projekt für Delphi 2 oder 3
+	Btn_Main.dfm	- Formulardatei der MainForm
+	Btn_Main.pas	- Quelltext der MainForm-Unit
+	BtnDemo.dof	- Compileroptionen des Demo-Projekts
+	BtnDemo.dpr	- Quelltext des Demo-Projekts
+	BtnDemo.res	- Resourcendatei des Demo-Projekts
+
+
+Installation:
+-------------
+
+In Delphi 1:
+------------
+1. Die Dateien aus dem Ordner 16Bit in das Delphi-Komponenten-Verzeichnis
+   entpacken.
+2. Menü Optionen : Komponente installieren
+3. Schaltfläche Hinzufügen / Durchsuchen
+4. Datei OvalBtn.pas im Delphi-Komponenten-Verzeichnis suchen und mit
+   OK bestätigen.
+5. Die Komponente erscheint in der Komponenten-Gruppe "Simon"
+
+In Delphi 2:
+------------
+1. Die Dateien aus dem Ordner 32Bit in das Delphi-Komponenten-Verzeichnis
+   entpacken.
+2. Menü Komponente :  installieren
+3. Schaltfläche Hinzufügen / Durchsuchen
+4. Datei OvalBtn.pas im Delphi-Komponenten-Verzeichnis suchen und mit
+   OK bestätigen.
+5. Die Komponente erscheint in der Komponenten-Gruppe "Simon"
+
+In Delphi 3:
+------------
+1. Die Dateien aus dem Ordner 32Bit in das Delphi-Komponenten-Verzeichnis
+   entpacken.
+2. Menü Komponente :  Komponente installieren
+3. Schaltfläche Durchsuchen (hinter dem Eingabefeld für den Unit-Namen)
+4. Datei OvalBtn.pas im Delphi-Komponenten-Verzeichnis suchen und mit
+   OK bestätigen.
+5. Die Rückfrage nach dem Neukompilieren des Packages bestätigen.
+5. Die Komponente erscheint in der Komponenten-Gruppe "Simon"
+
+
+
+Funktion:
+---------
+
+Die Komponente funktioniert genauso, wie die Delphi-Komponente TSpeedButton 
+mit folgenden Abweichungen:
+
+A) Eigenschaften:
+-----------------
+1. Die Eigenschaft "AllowAllUp" fehlt (Sie ist immer true).
+2. Die neue Eigenschaft "Color" bestimmt die Farbe des Buttons, falls er nicht
+   transparent ist.
+3. Die neue Eigenschaft "Transparent" bestimmt, ob der Button mit der Farbe
+   "Color" gefüllt wird, oder transparent ist.
+4. Die neue Eigenschaft "TransparentColor" bestimmt die Farbe des Glyphs, die 
+   als transparente Farbe ausgeblendet werden soll.
+
+B) Ereignisse:
+--------------
+1. Das Ereignis OnDblClick fehlt.
+2. Das neue Ereignis OnMouseEnter tritt ein, wenn die Maus in den (rechteckigen) 
+   Bereich der Komponente bewegt wird.
+3. Das neue Ereignis OnMouseExit tritt ein, wenn die Maus den (rechteckigen) 
+   Bereich der Komponente verlässt.
+
+Alle anderen Eigenschaften und Ereignisse entsprechen denen der TSpeedButton-Komponente
+und sind in der Online-Hilfe nachzulesen. Die Funktion der Komponente läßt sich außerdem
+sehr schön im beigefügten Demo-Programm im Ordner "BtnDemo" sehen.

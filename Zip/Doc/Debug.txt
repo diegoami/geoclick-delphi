@@ -1,0 +1,30 @@
+
+A note on debugging your application using TZipMaster or TZipBuilder:
+
+
+If there's anything wrong with your event handler procedures,
+you may get an error message from Windows saying something
+is wrong with one of the DLLs.
+
+
+This is because the DLLs become the "active program" when they
+are busy, and your event handlers are "slave" functions/procedures.
+Any serious errors in your event handlers will be reported as 
+problems with the "active program", which is the DLL.
+
+
+Don't forget that you can trace through the DLLs using TZipBuilder's/
+TZipMaster's "Trace" property.  "Trace" reports progress messages
+through your OnMessage event handler.  This is a very handy option.
+
+Fatal errors from Windows normally appear in the center of your
+screen.  If you are tracing, and you get a fatal error, you will
+not be able to scroll your trace window.  Also, you won't be able
+to move the Windows, and they will all close when you dismiss the
+Windows fatal error.  So, you should put your trace Window in the
+upper right part of your screen, and set it to "poDesigned".  This
+will let you see what is in the Window in case a fatal error occurs.
+
+
+Eric W. Engler
+englere@swcp.com

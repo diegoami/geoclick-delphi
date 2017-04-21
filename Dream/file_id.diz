@@ -1,0 +1,37 @@
+Dream Tree
+Version 3.51
+Copyright (c) 1997-2000 Dream Company
+D3 D4 D5 CPB3 CPB4 CPB5
+
+e-mail: contact@dream-com.com
+   WWW: http://www.dream-com.com
+-----------------------------------------------------------
+
+Dream Tree pack includes a  lot  of components and controls
+designed to display data in the Tree View.  TDCDrawTreeView
+and  TDCMSTreeView controls  can be considered  as advanced
+versions of  TTreeView control  that comes with Delphi  and
+C++ Builder.  Having  all features of  Delphi 4  TTreeView,
+Dream Tree  provides many new possibilities for developers.
+As all other  Dream products,  Dream Tree can be used under
+Delphi 3, Delphi 4, Delphi 5,  C++ Builder 3, C++ Builder 4
+and C++ Builder 5. It means, that Dream Tree brings all the
+power of the TTreeView from Delphi 4 (as well as many other
+great features) to older versions of Delphi and C++ Builder
+You should not notice  any difference  between using  Dream
+Tree controls  under any  supported  versions  of Delphi or
+C++ Builder.
+
+Dream Company  provides a large number of Tree Sources that
+can be readily used, such as  TDCMenuSource, TDCCollection-
+Source,  TDCResViewSource  and others.  Developing a custom
+Tree Source  for a specific data  is easier than developing
+a complete  new  tree view.  Besides that  several DB-aware
+components are provided.
+
+Dream Tree is written entirely with Delphi.  You don't need
+any  extra  DLLs  or  OCXs. Source is compatible and tested
+with  Delphi  3,   Delphi  4,   Delphi  5,   C++Builder  3,
+C++Builder 4  and  C++Builder 5.  Dream Tree is the royalty
+free  product,   it  comes  with  full  source  code,  free
+life-time support, free life-time upgrades and fixes!

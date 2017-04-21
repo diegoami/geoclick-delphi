@@ -1,0 +1,85 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialogs
+//
+
+DLGNEW DIALOG DISCARDABLE  157, 71, 163, 83
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE |
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Создать поддиректорию"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Текущий каталог :",-1,4,6,74,8
+    LTEXT           "Text",3001,3,16,156,15,WS_BORDER
+    LTEXT           "Новый каталог :",-1,4,38,114,8
+    EDITTEXT        3002,3,48,156,15,ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",1,51,67,50,14
+    PUSHBUTTON      "Отмена",2,106,67,50,14
+END
+
+FILEEXIST DIALOG DISCARDABLE  13, 19, 194, 56
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME
+CAPTION "Подтверждение перезаписи ..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Да",1,43,39,50,14
+    PUSHBUTTON      "&Нет",2,101,39,50,14
+    EDITTEXT        101,10,4,177,14,ES_CENTER | ES_MULTILINE | ES_READONLY |
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "&Больше не спрашивать",401,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,50,22,93,12
+END
+
+MAINDIALOG DIALOG DISCARDABLE  101, 74, 282, 159
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP |
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "DelZIPSFX32"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Начать",1,151,139,47,16
+    EDITTEXT        101,64,20,191,12,ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",775,256,20,15,12
+    LISTBOX         301,64,41,207,44,LBS_SORT | LBS_MULTIPLESEL |
+                    LBS_HASSTRINGS | LBS_USETABSTOPS | WS_VSCROLL |
+                    WS_TABSTOP
+    LISTBOX         302,64,41,207,44,LBS_SORT | LBS_HASSTRINGS |
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "П&одтверждать перезапись",503,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,6,98,110,10
+    CONTROL         "&Перезаписывать",501,"Button",BS_AUTORADIOBUTTON,204,98,72,10
+    CONTROL         "&Не перезаписывать",502,"Button",BS_AUTORADIOBUTTON,115,
+                    98,82,10
+    CONTROL         "запуск",1007,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,111,
+                    238,12
+    PUSHBUTTON      "&Закрыть",2,218,139,47,16
+    LTEXT           "Для существующих файлов :",509,91,86,98,8,WS_TABSTOP
+    LTEXT           "Извлечь в :",100,35,9,37,8,NOT WS_GROUP
+    LTEXT           "Файлы :",-1,30,41,28,11
+    ICON            "MNICON",-1,7,9,18,20
+    LTEXT           "",102,6,129,269,3,WS_BORDER
+    CONTROL         "O DelZip SFX...",103,"Button",BS_USERBUTTON |
+                    WS_TABSTOP,7,139,73,16
+END
+
+PASSWD DIALOG DISCARDABLE  6, 15, 157, 45
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE |
+    WS_CAPTION
+CAPTION "Ввод пароля..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        101,5,8,146,12,ES_PASSWORD | ES_AUTOVSCROLL |
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "&Ok",1,51,28,54,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MNICON                  ICON    DISCARDABLE     "mnicon.ico"
+
+/////////////////////////////////////////////////////////////////////////////

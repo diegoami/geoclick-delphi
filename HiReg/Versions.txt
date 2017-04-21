@@ -1,0 +1,58 @@
+THyperImages Version History
+2.2.0
+9/21/99
+Compatibility with Delphi 5.
+The component and property editors have been move to a separate unit.
+
+2.1.0
+8/20/99
+Correction of the Code Template|Create OnImageMouseUp event handler that
+was missing in the editor.
+The code expert in now in the demo version for Delphi 4.
+
+2.0.1
+8/11/99
+Correction of a bug that caused the scrollbars be visible without any
+need when a new image was loaded in the editor.(ScaleFormToImage method)
+Correction of a bug that caused an error when removing all images and
+when a hotspot was selected.(RemoveAllImagesClick method)
+The imagelist for the hotspots tree is now created dynamically, masked
+in Delphi 4 and not masked in Delphi 3 because of the bugs in
+TCustomImagelist of Delphi 3 (CreateEditor method).
+
+2.0.0
+7/12/99
+Correction of a bug that caused the hotspots in the explorer tree not
+to be sorted the right way.
+Correction of a bug that did not resize the hotspots in proportion
+when holding the Shift key.
+Support for other graphic format than bitmaps:
+(jpg, jpeg, gif,bmp, ,ico, emf, wmf).
+Added possibility to save and load hotspots from a file.
+Added the functionality to create HTML image maps code.
+Added properties:
+PaintBox, ImageCanvas.
+Made it easy to include the editor at run time.
+One source code with conditional defines for all versions.  
+
+1.2.0
+4/26/99
+Version for Delphi 4.
+There is no more DLL, Everything is in the package HyperIm.bpl.
+The source code of the Editor is supplied in the registered version.
+
+1.0
+September 1998
+First registered version for Delphi 3.
+
+0.9.1
+August 1998
+Second beta version for Delphi 3. 
+Added rectangular, ellipse and rounded rectangle hotspots.
+Added functionality to move and resize the hotspots.
+Added properties: HotCursor, HintOnHot, ImageHint and InvertOnHot.
+Added event: OnImageMouseMove.
+
+0.9
+July 1998
+First beta version for Delphi 3. 

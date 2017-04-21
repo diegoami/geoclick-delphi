@@ -1,0 +1,55 @@
+
+        Limitations on this version of ZIP/UNZIP for C++ Builder
+
+  1. Limited support for format conversions from other platforms:
+     MAC, Unix, IBM MVS, etc.  No guarantees!
+
+  2. No ability to prompt user upon trying to expand a file from
+     an archive if a file is already present.  The user must decide
+     beforehand whether he wants to overwrite, or skip, the files
+     that already exist.
+
+  3. No "built-in" ability exists to allow the application program
+     to review each file in a wildcard spec before they are used.
+
+  4. No support for Delphi v1 or Windows 3.1.  These DLL's require
+     Win32.  Sorry, but it isn't worth the debugging time to do
+     a back-port now.
+
+  5. Although these DLL's work with WinNT, there is no support 
+     for any expanded WinNT functionality not present in Win95
+     (like the security subsystem, for example).
+
+  6. In order to ensure that there are no copyright violations,
+     this project intentionally doesn't support two compression
+     formats:
+         tokenizing -  was never widely used (I've never seen
+                       this method used at all) 
+         reducing   -  was only used with beta versions of
+                       PKZIP before the release of v1.00
+                       (circa 1988/1989, I think).  During 
+                       this time most folks were still using
+                       PKPAK and PKARC.  Reducing was slooooow.
+
+     These formats ARE supported:
+         no compression (storing)
+         shrinking  (quick)
+         imploding  (popular with PKZIP v1.01) 
+         deflating  (best method, PKZIP v1.9+)
+
+     As far as I know, this package fully supports every ZIP
+     file made by PKZIP v2.04g.
+
+  7. There is only limited support for "network" pathnames, called UNCs.
+     (i.e. it's possible they don't work on each location where you can
+     use a pathname.)
+     A typical UNC pathname would be:
+            \\server\shared\subdir\fname.ext
+     Typically, you may have \\server\shared logically 
+     mounted as drive Q, for example.  So, you could zip up 
+     the file with this name:
+            Q:\subdir\fname.ext
+
+  8. Although there is support for codepage conversion between
+     OEM and Windows codepages there is no support for conversion
+     between different Windows codepages.

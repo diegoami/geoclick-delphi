@@ -1,0 +1,43 @@
+package HyperImD5;
+
+{$R *.RES}
+{$R '..\Hireg\HImages.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'THyperImages for Delphi 5'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl50,
+  VCLSMP50;
+
+contains
+  RoundRectOpt in '..\Hireg\RoundRectOpt.pas' {RoundRectOptionsForm},
+  CustomHImages in '..\Hireg\CustomHImages.pas',
+  HImages in '..\Hireg\HImages.pas',
+  HSEdit in '..\Hireg\HSEdit.pas' {HSEditForm},
+  About in '..\Hireg\About.pas' {AboutForm},
+  Experts in '..\Hireg\Experts.pas',
+  PropEdit in '..\Hireg\PropEdit.pas';
+
+end.

@@ -1,0 +1,43 @@
+package HyperImD4;
+
+{$R *.RES}
+{$R 'HImages.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'THyperImages for Delphi 4'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl40,
+  VCLSMP40;
+
+contains
+  RoundRectOpt in 'RoundRectOpt.pas' {RoundRectOptionsForm},
+  CustomHImages in 'CustomHImages.pas',
+  HImages in 'HImages.pas',
+  HSEdit in 'HSEdit.pas' {HSEditForm},
+  About in 'About.pas' {AboutForm},
+  Experts in 'Experts.pas',
+  PropEdit in 'PropEdit.pas';
+
+end.

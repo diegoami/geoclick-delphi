@@ -1,0 +1,277 @@
+
+[InstallShield Wizard]
+iDate=1
+iTime=1
+Flag=0
+ISX.EXE Size=679936
+ISX.EXE Date=11:21:52  8.4.1999
+ISX.EXE Ver=2.1.2.62
+SETUP.EXE Size=45312
+SETUP.EXE Date=9:12:24  23.3.1999
+SETUP.EXE Ver=3.0.111.0
+SETUP.INS Size=81342
+SETUP.INS Date=11:26:40  8.4.1999
+SETUP.INS Ver=Not available
+_INST16.EX_ Size=81342
+_INST16.EX_ Date=11:26:40  8.4.1999
+_INST16.EX_ Ver=Not available
+_INST32I.EX_ Size=294079
+_INST32I.EX_ Date=9:12:22  23.3.1999
+_INST32I.EX_ Ver=Not available
+ISDEPEND.INI Size=6857
+ISDEPEND.INI Date=10:13:00  23.7.1999
+ISDEPEND.INI Ver=Not available
+SWDEPEND.INI Size=9717
+SWDEPEND.INI Date=10:18:30  23.7.1999
+SWDEPEND.INI Ver=Not available
+ICOMP.EXE Size=119808
+ICOMP.EXE Date=9:12:24  23.3.1999
+ICOMP.EXE Ver=3.00.062
+SPLIT.EXE Size=90624
+SPLIT.EXE Date=9:12:24  23.3.1999
+SPLIT.EXE Ver=3.00.060
+PACKLIST.EXE Size=87552
+PACKLIST.EXE Date=9:12:24  23.3.1999
+PACKLIST.EXE Ver=3.00.060
+Version=2.12
+DevTool=Delphi 5
+Platform=Win32
+DisksBuilt=1
+DisksDir=GEOCLI~1\144MB\
+TabsVisit=11111111100001111101
+LangNum=0
+LangDir=
+
+[VisualDesign]
+AppName=Geoclick
+AppExe=[Program Files]\geoclick.exe
+AppExeFile=C:\Programme\Click It\Geoclick\geoclick.exe
+Version=1.3
+Company=Clicki it
+Title=Geoclick
+TitleType=1
+BackgrndBmp=
+BackgrndAlign=4
+Backgrnd=1
+BackgrndColor=10
+Uninstall=1
+UninstallChecked=1
+Silent=1
+SmsMode=0
+
+[Types]
+Types=1
+Type1Components=1
+Type1Name=Complete
+Type1ComponentList=1 
+
+[Components]
+Components=1
+Component1Groups=5
+Component1Name=Application Files
+Component1Description=Application files needed to run the application
+Component1GroupList=1 2 3 4 5 
+
+[Groups]
+Groups=5
+Group1Size=2132725
+Group1Files=11
+Group1Name=Program Files
+Group1Dir=<INSTALLDIR>
+Group1Update=0
+Group1TargetOS=-1
+Group1File1=C:\Programme\Click It\Geoclick\geoclick.exe
+Group1File2=C:\Programme\Click It\Geoclick\Unzdll.dll
+Group1File3=C:\Programme\Click It\Geoclick\dauninst.exe
+Group1File4=C:\Programme\Click It\Geoclick\Earth.ico
+Group1File5=C:\Programme\Click It\Geoclick\geoclick.xml
+Group1File6=C:\Programme\Click It\Geoclick\Geoclick1.chm
+Group1File7=C:\Programme\Click It\Geoclick\license.txt
+Group1File8=C:\Programme\Click It\Geoclick\Macaren2.mid
+Group1File9=C:\Programme\Click It\Geoclick\pointer.cur
+Group1File10=C:\Programme\Click It\Geoclick\readme.txt
+Group1File11=C:\Programme\Click It\Geoclick\uninstall.bat
+Group2Size=2023424
+Group2Files=1
+Group2Auto=50
+Group2ID=38650
+Group2Name=System Files - WinSysDir
+Group2Dir=<WINSYSDIR>
+Group2Update=-1
+Group2TargetOS=-1
+Group2File1=C:\WINDOWS\System32\VCL50.BPL
+Group2File1Auto=50
+Group3Size=730576
+Group3Files=5
+Group3Name=Europe
+Group3Dir=<INSTALLDIR>\Europe
+Group3Update=0
+Group3TargetOS=-1
+Group3File1=C:\Programme\Click It\Geoclick\Europe\towns.hsf
+Group3File2=C:\Programme\Click It\Geoclick\Europe\countries.hsf
+Group3File3=C:\Programme\Click It\Geoclick\Europe\europe.jpg
+Group3File4=C:\Programme\Click It\Geoclick\Europe\europm.jpg
+Group3File5=C:\Programme\Click It\Geoclick\Europe\rivers.hsf
+Group4Size=128395
+Group4Files=4
+Group4Name=Sounds
+Group4Dir=<INSTALLDIR>\Sounds
+Group4Update=0
+Group4TargetOS=-1
+Group4File1=C:\Programme\Click It\Geoclick\sounds\Whistle.wav
+Group4File2=C:\Programme\Click It\Geoclick\sounds\Macaren2.mid
+Group4File3=C:\Programme\Click It\Geoclick\sounds\No2.wav
+Group4File4=C:\Programme\Click It\Geoclick\sounds\Sound10.wav
+Group5Size=7400
+Group5Files=8
+Group5Name=Components
+Group5Dir=<INSTALLDIR>\Components
+Group5Update=0
+Group5TargetOS=-1
+Group5File1=C:\Programme\Click It\Geoclick\Components\Zoomout.bmp
+Group5File2=C:\Programme\Click It\Geoclick\Components\ftv2folderclosed.bmp
+Group5File3=C:\Programme\Click It\Geoclick\Components\ftv2folderopen.bmp
+Group5File4=C:\Programme\Click It\Geoclick\Components\hsf.bmp
+Group5File5=C:\Programme\Click It\Geoclick\Components\hsf2.bmp
+Group5File6=C:\Programme\Click It\Geoclick\Components\jpg.bmp
+Group5File7=C:\Programme\Click It\Geoclick\Components\MAP.bmp
+Group5File8=C:\Programme\Click It\Geoclick\Components\Zoomin.bmp
+
+[Sequence]
+DestinationLocationDir=<ProgramFilesDir>\Click it\Geoclick
+DatabaseLocationDir=<INSTALLDIR>\data
+SelectProgramFolderName=Geoclick
+WelcomeMessage=1
+WelcomeMessageFile=
+LicenseAgreement=1
+LicenseAgreementFile=C:\Programme\Click It\Geoclick\license.txt
+ReadMeFileBrowser=1
+ReadMeFileBrowserFile=C:\Programme\Click It\Geoclick\readme.txt
+DestinationLocation=1
+SelectProgramFolder=1
+BeginFileTransfer=1
+ProgressBar=1
+SetupComplete=1
+SetupCompleteExec=[Program Files]\geoclick.exe
+SetupCompleteExecParam=
+SetupCompleteExecReadme=
+
+[RegEntries]
+Reg1Path=HKEY_CLASSES_ROOT
+Reg1Val1Type=0
+Reg1Val1Name=(Default)
+Reg1Val1Data=(value not set)
+Reg1Vals=1
+Reg2Path=HKEY_CURRENT_USER
+Reg2Val1Type=0
+Reg2Val1Name=(Default)
+Reg2Val1Data=(value not set)
+Reg2Vals=1
+Reg3Path=HKEY_LOCAL_MACHINE
+Reg3Val1Type=0
+Reg3Val1Name=(Default)
+Reg3Val1Data=(value not set)
+Reg3Vals=1
+Reg4Path=HKEY_USERS
+Reg4Val1Type=0
+Reg4Val1Name=(Default)
+Reg4Val1Data=(value not set)
+Reg4Vals=1
+Reg5Path=HKEY_CURRENT_CONFIG
+Reg5Val1Type=0
+Reg5Val1Name=(Default)
+Reg5Val1Data=(value not set)
+Reg5Vals=1
+Reg6Path=HKEY_DYN_DATA
+Reg6Val1Type=0
+Reg6Val1Name=(Default)
+Reg6Val1Data=(value not set)
+Reg6Vals=1
+Reg7Path=HKEY_LOCAL_MACHINE\SOFTWARE
+Reg7Val1Type=0
+Reg7Val1Name=(Default)
+Reg7Val1Data=(value not set)
+Reg7Vals=1
+Reg8Path=HKEY_LOCAL_MACHINE\SOFTWARE\Click It
+Reg8Val1Type=0
+Reg8Val1Name=(Default)
+Reg8Val1Data=(value not set)
+Reg8Vals=1
+Reg9Path=HKEY_LOCAL_MACHINE\SOFTWARE\Click It\Geoclick
+Reg9Val1Type=0
+Reg9Val1Name=(Default)
+Reg9Val1Data=(value not set)
+Reg9Vals=1
+Regs=9
+
+[Registry]
+Reg1Path=HKEY_LOCAL_MACHINE\SOFTWARE
+Reg2Path=HKEY_LOCAL_MACHINE\SOFTWARE\Click It
+Reg3Path=HKEY_LOCAL_MACHINE\SOFTWARE\Click It\Geoclick
+Regs=3
+
+[Icons]
+Icons=4
+Icon1Param=
+Icon1Cmd=[Program Files]\geoclick.exe
+Icon1Description=geoclick
+Icon1WorkingDir=[Program Files]
+Icon1IconFile=
+Icon1RealFile=C:\Programme\Click It\Geoclick\geoclick.exe
+Icon1WhichIcon=0
+Icon1KeyVirtual=0
+Icon1KeyFlags=0
+Icon1StartMenu=0
+Icon1Window=0
+Icon2Param=
+Icon2Cmd=[Program Files]\uninstall.bat
+Icon2Description=uninstall
+Icon2WorkingDir=[Program Files]
+Icon2IconFile=
+Icon2RealFile=C:\Programme\Click It\Geoclick\uninstall.bat
+Icon2WhichIcon=0
+Icon2KeyVirtual=0
+Icon2KeyFlags=0
+Icon2StartMenu=0
+Icon2Window=0
+Icon3Param=
+Icon3Cmd=[Program Files]\readme.txt
+Icon3Description=readme
+Icon3WorkingDir=[Program Files]
+Icon3IconFile=
+Icon3RealFile=C:\Programme\Click It\Geoclick\readme.txt
+Icon3WhichIcon=0
+Icon3KeyVirtual=0
+Icon3KeyFlags=0
+Icon3StartMenu=0
+Icon3Window=0
+Icon4Param=
+Icon4Cmd=[Program Files]\Geoclick1.chm
+Icon4Description=Geoclick1
+Icon4WorkingDir=[Program Files]
+Icon4IconFile=
+Icon4RealFile=C:\Programme\Click It\Geoclick\Geoclick1.chm
+Icon4WhichIcon=0
+Icon4KeyVirtual=0
+Icon4KeyFlags=0
+Icon4StartMenu=0
+Icon4Window=0
+
+[Autoexec]
+PathDir=
+ShareLocks=
+ShareFiles=
+Command=
+
+[CopyToFloppy]
+DriveOption=Path
+DestinationPath=C:\Programme\Click It\
+DestinationPathOneFile=
+Password=
+
+[ISObjectIDs]
+nTotal=1
+ID1=50
+
+[Uninstall]
+UserUninstall=0

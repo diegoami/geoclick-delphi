@@ -1,0 +1,204 @@
+If you find any problems during installation write us to:
+  support@dream-com.com
+
+The latest version of Dream Controls  can be downloaded from
+our web site:
+  http://www.dream-com.com
+
+Registration process is described in order.txt
+
+------------------------------------------------------------
+
+After installation open "Instant Report" project in \INSTANT
+folder. This project is the main demo of our components.
+Other demos can be found in \DEMOS folder.
+
+
+Installation steps
+============================================================
+
+1. If  you  have  any  previous  version  of  Dream Controls
+   uninstall it (please refer to the "How to uninstall Dream
+   Controls" section of this file).
+
+2. Modify \UNITS\dc.inc file:
+
+   If you have  Standard version  of Delphi/CPB, comment out
+   this define:
+     {$DEFINE PRODELPHI}
+
+   If you have Client/Server version of Delphi/CPB uncomment
+   this define:
+     {$DEFINE CSDELPHI}
+
+3. If you install registered version  please read section at
+   the end of the file.
+
+
+Installation in Delphi 5
+============================================================
+
+1. Download and install all patches for Delphi5 from Inprise
+   [We used D5 with patch 1 to compile our trial]
+
+2. If you don't want to use BDE in your apps  please comment
+   out
+     {$DEFINE USEBDE} in DC.INC
+
+3. Run Delphi 5.
+
+4. Select the Delphi 5  File->Open  menu option and open the
+   file \UNITS\dcctd5.dpk
+
+5. Click Install.
+
+Installation in Delphi 4
+============================================================
+
+1. Download and install all patches for Delphi4 from Inprise
+   [We used D4 with patch 3 to compile our trial]
+
+2. Run Delphi 4.
+
+3. Select the Delphi 4  File->Open  menu option and open the
+   file \UNITS\dcctd4.dpk
+
+4. Click Install.
+
+
+Installation in Delphi 3
+============================================================
+
+1. Download and install all patches for Delphi3 from Borland
+   [We used D3 with patch 2 to compile our trial]
+
+2. Run Delphi 3.
+
+3. Select the Delphi 3  File->Open  menu option and open the
+   file \UNITS\dcctd3.dpk
+
+4. Click Install.
+
+
+Installation in C++ Builder 5
+============================================================
+
+1. Run C++ Builder.
+
+1. Select  the  File->Open  menu option  and  open  the file
+   \UNITS\dcctc5.bpk
+
+3. Click Install.
+
+
+Installation in C++ Builder 4
+============================================================
+
+1. Download and install  all patches  for CPB4 from Inprise.
+   You can get them at
+     http://www.inprise.com/devsupport/bcppbuilder/patches.html
+
+2. Run C++ Builder.
+
+3. Select  the  File->Open  menu option  and  open  the file
+   \UNITS\dcctc4.bpk
+
+4. Click Install.
+
+
+Installation in C++ Builder 3
+============================================================
+
+1. Download and install  all patches  for CPB3 from Inprise.
+   You can get them at
+     http://www.inprise.com/devsupport/bcppbuilder/patches.html
+
+2. Run C++Builder.
+
+3. Select  the  File->Open  menu option  and  open  the file
+   \UNITS\dcctc3.bpk
+   Make the package.
+
+4. Choose  Component->Install Packages.  Press  Add  button.
+   Select \UNITS\dcctc3.bpl.
+
+
+Dream Scripter Installation (additional steps)
+============================================================
+
+Please read scripts.txt for details.
+
+
+General Notes/Installation hints
+============================================================
+
+* There are many Q&A in FAQs. Please look in help.
+
+* If you work under  C++Builder  and encounter problems with
+  Dream Controls try to set "Incremental linking" option off
+  and press "Release" button in Options|Project|C++ tab. You
+  can also try to turn off "precompiled headers" option.
+
+* Files *_D5.pas, *_D4.pas, *_D3.pas, *_C5.pas, *_C4.pas and
+  *_C3.pas  weren't included  in  the registered version  of
+  Dream Scripter.  You can generate them  automatically with
+  \UTILS\IMPGEN program.
+
+* If  you want  to use  "External run"  feature  of  Instant
+  Report  you need  to build \UTILS\RUNNER project  and copy
+  dcrunner.exe to directory where Instant.exe is.
+
+* We used  such Delphi and CPB builds  to compile  our trial
+  versions:
+
+   D3  5.83
+   D4  5.108
+   D5  6.18
+   C3  3.70
+   C4  14.11
+   C5  12.34
+
+   If  you  try  to install  our trial  in other  Delphi/CPB
+   version  it  may  not  compile.  Registered versions  are
+   compatible with any Delphi/CPB build.
+
+
+Installation of the registered version (additional step)
+============================================================
+
+Before  installation  in  Delphi/CPB   you  need  to  modify
+\UNITS\prod.inc file:
+
+   a) If you don't have  "Dream Tree"  product,  comment out
+      define
+        {$DEFINE DREAMTREE}
+
+   b) If you don't have  "Dream Inspector"  product, comment
+      out define
+        {$DEFINE DREAMINSPECTOR}
+
+   c) If you don't have  "Dream Designer"  product,  comment
+      out define
+        {$DEFINE DREAMDESIGNER}
+
+   d) If you don't have  "Dream Scripter"  product,  comment
+      out define
+        {$DEFINE DREAMSCRIPTER}
+
+   e) If you don't have  "Dream Memo"  product,  comment out
+      define
+      {$DEFINE DREAMMEMO}
+
+   f) If you don't have  "Dream InfoTree"  product,  comment
+      out define
+      {$DEFINE DREAMINFOTREE}
+
+How to uninstall Dream Controls
+============================================================
+
+To uninstall previous version of Dream Controls  you need to
+call  Component|Install Packages  dialog.  Then select Dream
+Controls package and click Remove button.
+
+Then  you  can exit  Delphi or CPB  and  remove  Dream\Units
+folder (certainly if you don't store your own files there).

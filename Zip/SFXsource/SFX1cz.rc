@@ -1,0 +1,85 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialogs
+//
+
+DLGNEW DIALOG DISCARDABLE  157, 71, 163, 83
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Vytvoøit adresáø"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Aktuální adresáø :",-1,7,5,74,9
+    LTEXT           "Text",3001,3,16,156,15,WS_BORDER
+    LTEXT           "Nový adresáø :",-1,7,37,114,9
+    EDITTEXT        3002,3,48,156,15,ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,51,67,50,14
+    PUSHBUTTON      "Storno",2,106,67,50,14
+END
+
+FILEEXIST DIALOG DISCARDABLE  13, 19, 194, 56
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME
+CAPTION "Potvrdit pøepsání"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Ano",1,43,39,50,14
+    PUSHBUTTON      "&Ne",2,101,39,50,14
+    EDITTEXT        101,10,4,177,14,ES_CENTER | ES_MULTILINE | ES_READONLY |
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "&Pøíštì se již neptat",401,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,62,22,71,12
+END
+
+MAINDIALOG DIALOG DISCARDABLE  101, 74, 282, 159
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP |
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "DelZIPSFX32"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Start",1,151,139,47,16
+    EDITTEXT        101,64,20,191,12,ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    PUSHBUTTON      "...",775,256,20,15,12
+    LISTBOX         301,64,41,207,44,LBS_SORT | LBS_MULTIPLESEL |
+                    LBS_HASSTRINGS | LBS_USETABSTOPS | WS_VSCROLL |
+                    WS_TABSTOP
+    LISTBOX         302,64,41,207,44,LBS_SORT | LBS_HASSTRINGS |
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "P&otvrdit pøepsání",503,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,64,98,68,9
+    CONTROL         "&Pøepsat",501,"Button",BS_AUTORADIOBUTTON,223,98,47,9
+    CONTROL         "&Nepøepsat",502,"Button",BS_AUTORADIOBUTTON,145,
+                    98,65,9
+    CONTROL         "spustit",1007,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,111,
+                    238,12
+    PUSHBUTTON      "&Zavøít",2,218,139,47,16
+    LTEXT           "Existující soubor(y) :",509,35,86,63,9,WS_TABSTOP
+    LTEXT           "Vybalit do :",100,35,9,37,8,NOT WS_GROUP
+    LTEXT           "Soubory :",-1,35,41,23,11
+    ICON            "MNICON",-1,7,9,18,20
+    LTEXT           "",102,6,129,269,3,WS_BORDER
+    CONTROL         "O DelZip SFX...",103,"Button",BS_USERBUTTON |
+                    WS_TABSTOP,7,139,73,16
+END
+
+PASSWD DIALOG DISCARDABLE  6, 15, 157, 41
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+CAPTION "Zadání hesla..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        101,5,2,146,12,ES_PASSWORD | ES_AUTOVSCROLL |
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "&Ok",1,52,22,54,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MNICON                  ICON    DISCARDABLE     "mnicon.ico"
+
+/////////////////////////////////////////////////////////////////////////////

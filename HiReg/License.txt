@@ -1,0 +1,103 @@
+THyperImages
+Copyright (C) 1998-1999 
+by Noatak Racing Team
+
+All Rights Reserved
+
+License Agreement
+
+You should carefully read the following terms and
+conditions before using this software.  Unless you
+have a different license agreement signed by
+Noatak Racing Team, your use of this software indicates
+your acceptance of this license agreement and
+warranty.
+
+----------------------------------------------------------------
+
+LICENSE
+
+If you purchased the registered version of THyperImages
+hereafter referred to as 'the Software', you are hereby
+granted a non-exclusive license to use the Software.
+
+You may use and modify the source code to create and distribute
+compiled applications for end users, but you may not distribute
+THyperImages in part or in totality by itself or to create a
+developement tool.
+You may distribute the editor's help file with your applications.
+
+If you have obtained the software free of charge your
+are not entitled to support of any kind.
+
+
+DISCLAIMER OF WARRANTY.
+
+Should the Software prove defective, you alone shall
+assume the cost of any service and/or repair.
+
+SOME JURISDICTIONS DO NOT ALLOW
+EXCLUSIONS OF AN IMPLIED WARRANTY,
+SO THIS DISCLAIMER MAY NOT APPLY
+TO YOU AND YOU MAY HAVE OTHER LEGAL
+RIGHTS.
+
+
+SCOPE OF THIS GRANT:
+
+You may:
+  - use the Software on a single computer at a time
+    Installation on more than one system is allowed.
+    - it is intended to allow a single programmer to
+    install THyperImages on all of the machines that he
+    uses, but only to allow him/ her to use it on one
+    of those machines SIMULTANEOUSLY.
+  - if you have purchased the corporate license, you
+    may use the Software on multiple computers.    
+  - copy the Software for backup and archival
+    purposes.
+
+You may not: 
+  - permit other individuals to use the Software.
+  - remove any proprietary notices from the Software
+    and associated files.
+  - modify, reverse engineer, disassemble or create
+    derivative works based on the Software.
+  - rent, lease, or otherwise transfer rights to the
+    Software.
+  - make available either intentionally or otherwise your
+    registration details to other persons.
+
+
+TITLE.
+
+Title, ownership rights, and intellectual property rights
+in the Software shall remain vested in The Author. The
+Software is protected by copyright laws and treaties.
+Title and related rights in the content accessed
+through the Software is the property of the applicable
+content owner and may be protected by applicable law.
+This License gives you no rights to such content.
+
+
+
+TERMINATION.
+
+The license will terminate automatically and the
+software unregistered if you fail to comply with any of
+the above terms and conditions.
+
+
+
+LIMITATION OF LIABILITY.
+
+UNDER NO CIRCUMSTANCES SHALL Noatak Racing 
+Team, THE AUTHOR, SUPPLIERS AND OR
+RESELLERS OF THE SOFTWARE BE LIABLE TO
+YOU OR ANY OTHER PERSON FOR ANY DIRECT,
+INDIRECT, OR INCIDENTAL DAMAGES OF ANY
+CHARACTER.
+SOME JURISDICTIONS DO NOT ALLOW THE
+EXCLUSION OR LIMITATION OF INCIDENTAL OR
+CONSEQUENTIAL DAMAGES, SO THIS 
+LIMITATION MAY NOT APPLY TO YOU.
