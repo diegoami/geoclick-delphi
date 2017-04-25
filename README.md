@@ -2,7 +2,7 @@
 
 It is the year 2017 and I went back to this "game" that I made in 2000-2001.
 
-It turned out that I miss some files, so I patched it up. The file containing the executable is here : http://clickit.pair.com/software/geoclick/geoclick13-patched.zip
+It turned out that I miss some files, so I patched it up. The file containing the executable is here : http://www.amicabile.com/software/geoclick/geoclick13-patched.zip
 
 The game runs (almost) flawlessly under Windows 7 and 8, no idea about 10. However, make sure you read this file.
 
@@ -18,7 +18,7 @@ $69309043
 
 The game comes with few maps, as too many maps will make it crash. There are more maps here : 
 
-http://clickit.pair.com/maps/
+http://www.amicabile.com/maps/
 
 Just download and uncompress them in the directory where you put Geoclick. There is a function in the program to do that for you, but it does not seem to work on modern computers.
 
@@ -30,7 +30,7 @@ Otherwise, just click away the messagebox that appear when you start the game - 
 
 # INSTRUCTIONS
 
-As I wrote, the program is not intuitive, but there are instructions at http://www.amicabile.com/geoclick
+As I wrote, the program is not intuitive, but there are instructions at http://www.amicabile.com/geoclick/
 
 Common problems :
 *  To select the maps you want to be asked about, go to the window under the "asterisks" icon (Option/Hotspots) 
