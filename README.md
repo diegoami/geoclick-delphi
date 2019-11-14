@@ -4,7 +4,7 @@ It is the year 2017 and I went back to this "game" that I made in 2000-2001.
 
 It turned out that I miss some files, so I patched it up. The file containing the executable is here : http://www.amicabile.com/software/geoclick/geoclick13-patched.zip
 
-The game runs (almost) flawlessly under Windows 7 and 8, no idea about 10. However, make sure you read this file.
+The game runs (almost) flawlessly under Windows 7, 8 and 10. However, make sure you read this file.
 
 # REGISTRATION CODE
 
@@ -20,7 +20,7 @@ The game comes with few maps, as too many maps will make it crash. There are mor
 
 http://www.amicabile.com/maps/
 
-Just download and uncompress them in the directory where you put Geoclick. There is a function in the program to do that for you, but it does not seem to work on modern computers.
+Just download and uncompress them in the directory where you put Geoclick. There is a function in the program to do that for you, but it points to a wrong location.
 
 # DISACTIVATE SOUND 
 
